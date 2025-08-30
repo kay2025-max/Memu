@@ -216,6 +216,5 @@ async def on_ready():
     print(f"📋 Lệnh: !store - Xem bảng giá")
     print(f"⚙️ Lệnh: !updategia - Cập nhật giá (Admin)")
 import os
-TOKEN = os.getenv("DISCORD_TOKEN")
-bot.run(TOKEN)
+bot.run(os.getenv("DISCORD_TOKEN"))
 
